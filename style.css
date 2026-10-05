@@ -1,0 +1,79 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background-color: lightgray;
+}
+
+h1 {
+    color: darkblue;
+}
+
+.container {
+    margin-top: 40px;
+}
+
+/* Circle */
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+/* Square */
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin: 20px auto;
+}
+
+/* Triangle */
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 100px solid green;
+    margin: 20px auto;
+}
+
+/* Hover Effect */
+.box {
+    width: 150px;
+    height: 80px;
+    background-color: orange;
+    margin: 30px auto;
+    padding-top: 30px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.box:hover {
+    background-color: purple;
+    transform: scale(1.2);
+}
+
+/* Loading Spinner */
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 8px solid white;
+    border-top: 8px solid blue;
+    border-radius: 50%;
+    margin: 30px auto;
+
+    animation: spin 1s linear infinite;
+}
+
+/* Spinner Animation */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
